@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Requests | CompostConnect</title>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-left">
+      <a class="nav-link active" href="#">Requests</a>
+      <a class="nav-link" href="#">Buy kit</a>
+      <a class="nav-link" href="#">Profile</a>
+    </div>
+    <div class="nav-right">
+      <span class="logout">Log out</span>
+      <img class="profile-img" src="icons/Photo OUARAS 1.png" alt="Profile">
+    </div>
+  </nav>
+  <main>
+    <h2 class="subtitle">look for buyers</h2>
+    <section class="requests-container">
+      <!-- First clickable request -->
+      <a href="profile_ouras.html" class="request-card active clickable" style="text-decoration:none;">
+        <img class="avatar" src="icons/Photo OUARAS 1.png" alt="User">
+        <span class="name"><span class="profile-link">OURAS khelil</span></span>
+        <span class="weight"><img src="icons/light-suitcase.png" class="icon" alt="Suitcase">29kg/30kg</span>
+        <button class="star-btn"><img src="icons/light-star.png" class="icon-btn" alt="Star"></button>
+        <button class="delete-btn"><img src="icons/light-trash.png" class="icon-btn" alt="Delete"></button>
+      </a>
+      <!-- Second clickable request -->
+      <a href="profile_gharbi.html" class="request-card selected clickable" style="text-decoration:none;">
+        <img class="avatar" src="icons/Photo OUARAS 1.png" alt="User">
+        <span class="name"><span class="profile-link">GHARBI Mohamed</span></span>
+        <span class="weight"><img src="icons/light-suitcase.png" class="icon" alt="Suitcase">98kg/100kg</span>
+        <button class="star-btn"><img src="icons/light-star.png" class="icon-btn" alt="Star"></button>
+        <button class="delete-btn"><img src="icons/light-trash.png" class="icon-btn" alt="Delete"></button>
+      </a>
+      <!-- Non-clickable requests -->
+      <div class="request-card">
+        <img class="avatar" src="icons/Photo OUARAS 1.png" alt="User">
+        <span class="name"><a href="profile_amer.html" class="profile-link">AMER Kousofi</a> <span class="date">10 Aug, 2025</span></span>
+        <button class="details-btn"><img src="icons/dark-suitcase.png" class="icon" alt="Suitcase">More details</button>
+        <button class="star-btn"><img src="icons/dark-star.png" class="icon-btn" alt="Star"></button>
+        <button class="delete-btn"><img src="icons/dark-trash.png" class="icon-btn" alt="Delete"></button>
+      </div>
+      <div class="request-card">
+        <img class="avatar" src="icons/Photo OUARAS 1.png" alt="User">
+        <span class="name"><a href="profile_rabia.html" class="profile-link">RABIA Imed</a> <span class="date">09 Aug, 2025</span></span>
+        <button class="details-btn"><img src="icons/dark-suitcase.png" class="icon" alt="Suitcase">More details</button>
+        <button class="star-btn"><img src="icons/dark-star.png" class="icon-btn" alt="Star"></button>
+        <button class="delete-btn"><img src="icons/dark-trash.png" class="icon-btn" alt="Delete"></button>
+      </div>
+      <div class="request-card">
+        <img class="avatar" src="icons/Photo OUARAS 1.png" alt="User">
+        <span class="name"><a href="profile_rabhi.html" class="profile-link">RABHI Salim</a> <span class="date">11 Aug, 2025</span></span>
+        <button class="details-btn"><img src="icons/dark-suitcase.png" class="icon" alt="Suitcase">More details</button>
+        <button class="star-btn"><img src="icons/dark-star.png" class="icon-btn" alt="Star"></button>
+        <button class="delete-btn"><img src="icons/dark-trash.png" class="icon-btn" alt="Delete"></button>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
