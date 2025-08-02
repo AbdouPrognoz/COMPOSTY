@@ -270,7 +270,9 @@ margin-bottom: 1.5rem;
 }
 
 /* || OFFERS */
-
+.offers{
+    margin-bottom: 100px;
+}
 .offers__h2{
     text-align: center;
     font-size: 4rem;
@@ -364,4 +366,97 @@ gap: 1rem;
   font-size: 1.5rem;
   width: 1.5rem;
   padding-top: .5rem;
+}
+
+.big{
+    border: 2px solid #3479E9;
+}
+
+/* || FOOTER */
+.footer{
+    display: grid;
+    grid-template-columns: 1fr repeat(3, 270px);
+    grid-template-areas:"asd abt res con"
+                        "cop cop cop cop";
+    background-color: var(--green);
+    color: white;
+    gap: 1.5rem;
+}
+
+.footer_el{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    color:rgba(255, 255, 255, 0.8);
+}
+.footer_el li::marker{
+    color: var(--orange);
+}
+.footer_el h2{
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    color: var(--white-smoke);
+}
+
+.footer_el strong{
+    color: white;
+}
+.footer_el h2::after{
+    content: "";
+    width: 30%;
+    height: 6px;
+    border-radius: 10px;
+    background-color: var(--orange);
+    display: block;
+}
+.footer__aside{
+    grid-area: asd;
+    padding: 1rem;
+    display: flex;
+    align-items: flex-end;
+    color: rgba(255, 255, 255, 0.8);
+}
+.footer__about{
+    grid-area: abt;
+    padding: 1rem;
+}
+.footer__resources{
+    grid-area: res;
+    padding: 1rem;
+}
+.footer__contact{
+    grid-area: con;
+    padding: 1rem;
+
+}
+.footer__icons{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    margin-left: -30px;
+}
+
+.footer__icons img:hover{
+    cursor: pointer;
+    filter: brightness(150%);
+}
+.footer__copy{
+    grid-area: cop;
+    padding: .5rem;
+    background-color: var(--orange);
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: var(--font-family-heading);
+}
+.link-hover{
+    transition: .2s;
+}
+.link-hover:hover{
+    cursor: pointer;
+    color: white;
+    text-decoration: underline;
+}
+
+button:hover{
+    cursor: pointer;
 }
