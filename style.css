@@ -31,6 +31,7 @@ body{
     grid-template-rows: auto 1fr auto;
     font-family: var(--font-family-paragraph);
     line-height: 1.5;
+    color: var(--black);
 }
 
 
@@ -159,6 +160,7 @@ border: none;
     align-items: center;
     gap: 5rem;
     margin-top: 50px;
+    margin-bottom: 100px;
 }
 
 .process__card{
@@ -211,4 +213,155 @@ border: none;
     position: absolute;
     top: -90px;
     left: -145px;
+}
+
+/* || INSIDE THE BOX */
+.inside-box{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    padding: 2rem;
+    margin-bottom: 100px;
+}
+
+.inside-box__icon{
+    padding: 2rem;
+}
+.inside-box__h2{
+    font-size: var(--font-size-lg);
+    font-family: var(--font-family-heading);
+    margin-bottom: .7rem;
+}
+
+.inside-box__p{
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.inside-box__cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.inside-box__card{
+    background-color: var(--white-smoke);
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 15px;
+    transition: .2s;
+}
+.inside-box__card:hover{
+    transform: scale(101%);
+}
+.inside-box__h3{
+font-family: var(--font-family-heading);
+font-size: 2rem;
+margin-bottom: 1.5rem;
+}
+
+.inside-box__content{
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+/* || OFFERS */
+
+.offers__h2{
+    text-align: center;
+    font-size: 4rem;
+    font-family: var(--font-family-heading);
+    margin-bottom: 1.5rem;
+}
+.offers__cards{
+/*     background-color: red; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 2rem;
+gap: 1rem;
+}
+
+.offers__card{
+    max-width: 640px;
+    background-color: #DBF6DF;
+    padding: 1.5rem;
+    border-radius: 15px;
+}
+
+.offers__buy{
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+    border-bottom: 1px dashed rgba(0, 0, 0, 0.3);
+    padding-bottom: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.offers__type{
+    font-size: 1.2rem;
+    color: rgba(0, 0, 0, 0.5);
+    font-weight: 500;
+}
+.orange{
+    color: var(--orange);
+}
+
+.offers__price{
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.offers__aside{
+    font-size: .9rem;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.offers__buy button{
+    font-size: 1.2rem;
+    padding: .8rem 1.5rem;
+    border: none;
+    border-radius: 10px;
+    letter-spacing: .1em;
+    transition: all .2s;
+}
+.btn-orange{
+    color: var(--white-smoke);
+    background-color: var(--orange);
+}
+.btn-black{
+    color: var(--white-smoke);
+    background-color: var(--black);
+}
+.btn-orange:hover{
+     background-color: #b35313;
+}
+.btn-black:hover{
+     background-color: rgb(74, 72, 72);
+}
+.offers__details{
+    padding-left: 2rem;
+}
+.offers__details ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+    font-size: 1.2rem;
+}
+.offers__details li {
+  display: flex;
+  align-items: center; /* ✅ vertical center */
+  font-size: 1.2rem;
+  gap: 1rem;
+}
+
+.offers__details  li::before {
+  content:url(assets/image/checkMark.png);
+  font-size: 1.5rem;
+  width: 1.5rem;
+  padding-top: .5rem;
 }
